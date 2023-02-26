@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=480"> -->
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg">
+					  <div class="container-fluid">
+					    <a class="navbar-brand" href="#">Супермаркет <br>достопримечательностей</a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="menu-1"></span>
+					      <span class="menu-2"></span>
+					      <span class="menu-3"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav">
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">О путеводителе</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">Оплата</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">Контакты</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">FAQ</a>
+					        </li>
+					      </ul>
+					      <form class="head-items d-flex">
+					        <div class="h-item head-cart">
+					        	<a href="#!">
+					        		<svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.03715 10.0525C0.991206 9.86827 0.987829 9.676 1.02728 9.49027C1.06673 9.30454 1.14798 9.13024 1.26485 8.9806C1.38172 8.83096 1.53114 8.70991 1.70178 8.62663C1.87242 8.54336 2.05978 8.50005 2.24965 8.5H24.0497C24.2395 8.50005 24.4269 8.54336 24.5975 8.62663C24.7682 8.70991 24.9176 8.83096 25.0345 8.9806C25.1513 9.13024 25.2326 9.30454 25.272 9.49027C25.3115 9.676 25.3081 9.86827 25.2622 10.0525L22.9984 19.1063C22.8632 19.6471 22.5511 20.1272 22.1117 20.4704C21.6724 20.8135 21.1309 20.9999 20.5734 21H5.7259C5.16842 20.9999 4.62695 20.8135 4.18757 20.4704C3.74818 20.1272 3.4361 19.6471 3.3009 19.1063L1.03715 10.0538V10.0525Z" stroke="#181818" stroke-width="2" stroke-linejoin="round"/>
+									<path d="M9.39966 13.5V16" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									<path d="M16.8997 13.5V16" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									<path d="M5.64966 8.5L10.6497 1" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									<path d="M20.6497 8.5L15.6497 1" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+					        	</a>
+					        </div>
+
+					        <div class="h-item head-favorite">
+					        	<a href="#!">
+					        		<svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.29883 7C1.29883 2.11111 5.18772 1 7.40994 1C10.1877 1 12.4099 3.22222 13.5211 4.88889C14.6322 3.22222 16.8544 1 19.6322 1C21.8544 1 25.7433 2.11111 25.7433 7C25.7433 14.3333 13.5211 21 13.5211 21C13.5211 21 1.29883 14.3333 1.29883 7Z" stroke="#181818" stroke-width="2"/>
+									</svg>
+					        	</a>
+					        </div>
+
+					        <div class="h-item head-person">
+					        	<a href="#!" data-bs-toggle="modal" data-bs-target="#welcome">
+					        		<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.4775 11C13.239 11 15.4775 8.76142 15.4775 6C15.4775 3.23858 13.239 1 10.4775 1C7.71612 1 5.47754 3.23858 5.47754 6C5.47754 8.76142 7.71612 11 10.4775 11Z" stroke="#181818" stroke-width="2"/>
+									<path d="M15.4776 13H15.8296C16.5607 13.0002 17.2665 13.2674 17.8145 13.7513C18.3625 14.2352 18.7149 14.9026 18.8056 15.628L19.1966 18.752C19.2318 19.0334 19.2067 19.3191 19.123 19.5901C19.0393 19.8611 18.899 20.1112 18.7112 20.3238C18.5235 20.5364 18.2927 20.7066 18.0342 20.8232C17.7756 20.9398 17.4952 21.0001 17.2116 21H3.7436C3.45998 21.0001 3.17959 20.9398 2.92105 20.8232C2.6625 20.7066 2.4317 20.5364 2.24398 20.3238C2.05625 20.1112 1.91589 19.8611 1.8322 19.5901C1.74852 19.3191 1.72343 19.0334 1.7586 18.752L2.1486 15.628C2.2393 14.9022 2.59202 14.2346 3.14043 13.7506C3.68885 13.2667 4.39518 12.9997 5.1266 13H5.4776" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+					        	</a>
+					        </div>
+
+					        <div class="h-item head-search">
+					        	<a href="#!">
+					        		<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2119 21L16.4898 16.2695L21.2119 21ZM19.1067 9.94737C19.1067 12.3204 18.164 14.5962 16.486 16.2741C14.8081 17.9521 12.5323 18.8947 10.1593 18.8947C7.78629 18.8947 5.5105 17.9521 3.83254 16.2741C2.15458 14.5962 1.21191 12.3204 1.21191 9.94737C1.21191 7.57438 2.15458 5.29858 3.83254 3.62062C5.5105 1.94267 7.78629 1 10.1593 1C12.5323 1 14.8081 1.94267 16.486 3.62062C18.164 5.29858 19.1067 7.57438 19.1067 9.94737V9.94737Z" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+					        	</a>
+					        </div>
+					      </form>
+					    </div>
+					  </div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="main-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="main-text">
+							<h1>Супермаркет достопримечательностей</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- ====================== MODALS ============================ -->
+
+	<!-- Modal welcome -->
+	<div class="modal welcome-modal fade" id="welcome" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+	        	<img src="images/back-arrow.svg" alt="">
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<form action="#!">
+	      		<div class="welcome-block">
+	        		<h3>Добро пожаловать!</h3>
+	        		<div class="form-group">
+	        			<input type="tel" name="phone" id="phone" placeholder="+7 (999) 805-00-22" required>
+	        			<button id="welcome-btn" data-bs-toggle="modal" data-bs-target="#code">ОТправить код</button>
+	        		</div>
+	        		<p>У вас нет аккаунта? <a href="#!" data-bs-toggle="modal" data-bs-target="#reg">Регистрация</a></p>
+	        	</div>
+	      	</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal CODE-->
+	<div class="modal code-modal fade" id="code" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+	        	<img src="images/back-arrow.svg" alt="">
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<form action="#!">
+	      		<div class="welcome-block">
+	        		<h3>Добро пожаловать!</h3>
+	        		<div class="form-group">
+	        			<input type="number" name="code" id="code" placeholder="8855" required>
+	        			<button id="continue-btn">продолжить</button>
+	        		</div>
+	        		<p>У вас нет аккаунта? <a href="#!" data-bs-toggle="modal" data-bs-target="#reg">Регистрация</a></p>
+	        	</div>
+	      	</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal REGISTRATION-->
+	<div class="modal reg-modal fade" id="reg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+	        	<img src="images/back-arrow.svg" alt="">
+	        </button>
+	      </div>
+	      <div class="modal-body reg-body">
+	      	<form action="#!">
+	      		<div class="reg-block">
+	        		<h3>Регистрация</h3>
+	        		<div class="form-group">
+	        			<input type="text" name="name" id="name" placeholder="Иванов Иван Иванович" required>
+	        			<input type="mail" name="mail" id="mail" placeholder="ivanov@gmail.com" required>
+	        			<input type="tel" name="phone2" id="phone2" placeholder="+7(999) 555 99 66" required>
+	        			<div class="check-group">
+					        <input type="checkbox" id="aggree" checked>
+					        <label for="aggree">Согласен на обработку персональных данных. <a href="#!">Политика конфиденциальности</a></label>
+					    </div>
+	        			<button id="continue-btn" data-bs-toggle="modal" data-bs-target="#thanks">зарегистрироваться</button>
+	        		</div>
+	        		<p>У вас есть аккаунт? <a href="#!">Вход</a></p>
+	        	</div>
+	      	</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Thanks-->
+	<div class="modal thanks-modal fade" id="thanks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+	        	<img src="images/back-arrow.svg" alt="">
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<h3>Спасибо <br>за регистрацию</h3>
+	      	<p class="thanks-text">Перейдите по ссылке в письме на электронной почте и подтвердите регистрацию, чтобы продолжить покупки:)</p>
+
+	      	<p>У вас есть аккаунт? <a href="#!">Вход</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>	
+	<script src="js/script.js"></script>
+</body>
+</html>

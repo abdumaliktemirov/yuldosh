@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/aos.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=480"> -->
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg">
+					  <div class="container-fluid">
+					    <div class="mob-top">
+					    	<a class="navbar-brand" href="#">Супермаркет <br>достопримечательностей</a>
+						    <a href="#!" class="mob-search">
+				        		<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M21.2119 21L16.4898 16.2695L21.2119 21ZM19.1067 9.94737C19.1067 12.3204 18.164 14.5962 16.486 16.2741C14.8081 17.9521 12.5323 18.8947 10.1593 18.8947C7.78629 18.8947 5.5105 17.9521 3.83254 16.2741C2.15458 14.5962 1.21191 12.3204 1.21191 9.94737C1.21191 7.57438 2.15458 5.29858 3.83254 3.62062C5.5105 1.94267 7.78629 1 10.1593 1C12.5323 1 14.8081 1.94267 16.486 3.62062C18.164 5.29858 19.1067 7.57438 19.1067 9.94737V9.94737Z" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+				        	</a>
+					    </div>
+					    <div class="mob-btn">
+					    	<button class="navbar-toggler" type="button">
+						      	<div class="for-mob" id="menu-opener">
+									<span class="mob1"></span>
+									<span class="mob2"></span>
+									<span class="mob3"></span>
+								</div>
+						    </button>
+						    <div class="mob-assets">
+						    	<div class="h-item head-favorite">
+						        	<a href="#!">
+						        		<svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.29883 7C1.29883 2.11111 5.18772 1 7.40994 1C10.1877 1 12.4099 3.22222 13.5211 4.88889C14.6322 3.22222 16.8544 1 19.6322 1C21.8544 1 25.7433 2.11111 25.7433 7C25.7433 14.3333 13.5211 21 13.5211 21C13.5211 21 1.29883 14.3333 1.29883 7Z" stroke="#181818" stroke-width="2"/>
+										</svg>
+						        	</a>
+						        </div>
+
+						    	<div class="h-item head-cart">
+						        	<a href="#!">
+						        		<svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.03715 10.0525C0.991206 9.86827 0.987829 9.676 1.02728 9.49027C1.06673 9.30454 1.14798 9.13024 1.26485 8.9806C1.38172 8.83096 1.53114 8.70991 1.70178 8.62663C1.87242 8.54336 2.05978 8.50005 2.24965 8.5H24.0497C24.2395 8.50005 24.4269 8.54336 24.5975 8.62663C24.7682 8.70991 24.9176 8.83096 25.0345 8.9806C25.1513 9.13024 25.2326 9.30454 25.272 9.49027C25.3115 9.676 25.3081 9.86827 25.2622 10.0525L22.9984 19.1063C22.8632 19.6471 22.5511 20.1272 22.1117 20.4704C21.6724 20.8135 21.1309 20.9999 20.5734 21H5.7259C5.16842 20.9999 4.62695 20.8135 4.18757 20.4704C3.74818 20.1272 3.4361 19.6471 3.3009 19.1063L1.03715 10.0538V10.0525Z" stroke="#181818" stroke-width="2" stroke-linejoin="round"/>
+										<path d="M9.39966 13.5V16" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+										<path d="M16.8997 13.5V16" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+										<path d="M5.64966 8.5L10.6497 1" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+										<path d="M20.6497 8.5L15.6497 1" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+										</svg>
+						        	</a>
+						        </div>
+
+						        <div class="h-item head-person">
+						        	<a href="#!">
+						        		<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.4775 11C13.239 11 15.4775 8.76142 15.4775 6C15.4775 3.23858 13.239 1 10.4775 1C7.71612 1 5.47754 3.23858 5.47754 6C5.47754 8.76142 7.71612 11 10.4775 11Z" stroke="#181818" stroke-width="2"/>
+										<path d="M15.4776 13H15.8296C16.5607 13.0002 17.2665 13.2674 17.8145 13.7513C18.3625 14.2352 18.7149 14.9026 18.8056 15.628L19.1966 18.752C19.2318 19.0334 19.2067 19.3191 19.123 19.5901C19.0393 19.8611 18.899 20.1112 18.7112 20.3238C18.5235 20.5364 18.2927 20.7066 18.0342 20.8232C17.7756 20.9398 17.4952 21.0001 17.2116 21H3.7436C3.45998 21.0001 3.17959 20.9398 2.92105 20.8232C2.6625 20.7066 2.4317 20.5364 2.24398 20.3238C2.05625 20.1112 1.91589 19.8611 1.8322 19.5901C1.74852 19.3191 1.72343 19.0334 1.7586 18.752L2.1486 15.628C2.2393 14.9022 2.59202 14.2346 3.14043 13.7506C3.68885 13.2667 4.39518 12.9997 5.1266 13H5.4776" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+						        	</a>
+						        </div>
+						    </div>
+					    </div>
+					    <div class="navbar-collapse">
+					      <ul class="navbar-nav">
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">О путеводителе</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">Оплата</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">Контакты</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#">FAQ</a>
+					        </li>
+					      </ul>
+					      <form class="head-items">
+					        <div class="h-item head-cart">
+					        	<a href="#!">
+					        		<svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.03715 10.0525C0.991206 9.86827 0.987829 9.676 1.02728 9.49027C1.06673 9.30454 1.14798 9.13024 1.26485 8.9806C1.38172 8.83096 1.53114 8.70991 1.70178 8.62663C1.87242 8.54336 2.05978 8.50005 2.24965 8.5H24.0497C24.2395 8.50005 24.4269 8.54336 24.5975 8.62663C24.7682 8.70991 24.9176 8.83096 25.0345 8.9806C25.1513 9.13024 25.2326 9.30454 25.272 9.49027C25.3115 9.676 25.3081 9.86827 25.2622 10.0525L22.9984 19.1063C22.8632 19.6471 22.5511 20.1272 22.1117 20.4704C21.6724 20.8135 21.1309 20.9999 20.5734 21H5.7259C5.16842 20.9999 4.62695 20.8135 4.18757 20.4704C3.74818 20.1272 3.4361 19.6471 3.3009 19.1063L1.03715 10.0538V10.0525Z" stroke="#181818" stroke-width="2" stroke-linejoin="round"/>
+									<path d="M9.39966 13.5V16" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									<path d="M16.8997 13.5V16" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									<path d="M5.64966 8.5L10.6497 1" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									<path d="M20.6497 8.5L15.6497 1" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+					        	</a>
+					        </div>
+
+					        <div class="h-item head-favorite">
+					        	<a href="#!">
+					        		<svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.29883 7C1.29883 2.11111 5.18772 1 7.40994 1C10.1877 1 12.4099 3.22222 13.5211 4.88889C14.6322 3.22222 16.8544 1 19.6322 1C21.8544 1 25.7433 2.11111 25.7433 7C25.7433 14.3333 13.5211 21 13.5211 21C13.5211 21 1.29883 14.3333 1.29883 7Z" stroke="#181818" stroke-width="2"/>
+									</svg>
+					        	</a>
+					        </div>
+
+					        <div class="h-item head-person">
+					        	<a href="#!">
+					        		<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.4775 11C13.239 11 15.4775 8.76142 15.4775 6C15.4775 3.23858 13.239 1 10.4775 1C7.71612 1 5.47754 3.23858 5.47754 6C5.47754 8.76142 7.71612 11 10.4775 11Z" stroke="#181818" stroke-width="2"/>
+									<path d="M15.4776 13H15.8296C16.5607 13.0002 17.2665 13.2674 17.8145 13.7513C18.3625 14.2352 18.7149 14.9026 18.8056 15.628L19.1966 18.752C19.2318 19.0334 19.2067 19.3191 19.123 19.5901C19.0393 19.8611 18.899 20.1112 18.7112 20.3238C18.5235 20.5364 18.2927 20.7066 18.0342 20.8232C17.7756 20.9398 17.4952 21.0001 17.2116 21H3.7436C3.45998 21.0001 3.17959 20.9398 2.92105 20.8232C2.6625 20.7066 2.4317 20.5364 2.24398 20.3238C2.05625 20.1112 1.91589 19.8611 1.8322 19.5901C1.74852 19.3191 1.72343 19.0334 1.7586 18.752L2.1486 15.628C2.2393 14.9022 2.59202 14.2346 3.14043 13.7506C3.68885 13.2667 4.39518 12.9997 5.1266 13H5.4776" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+					        	</a>
+					        </div>
+
+					        <div class="h-item head-search">
+					        	<a href="#!">
+					        		<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2119 21L16.4898 16.2695L21.2119 21ZM19.1067 9.94737C19.1067 12.3204 18.164 14.5962 16.486 16.2741C14.8081 17.9521 12.5323 18.8947 10.1593 18.8947C7.78629 18.8947 5.5105 17.9521 3.83254 16.2741C2.15458 14.5962 1.21191 12.3204 1.21191 9.94737C1.21191 7.57438 2.15458 5.29858 3.83254 3.62062C5.5105 1.94267 7.78629 1 10.1593 1C12.5323 1 14.8081 1.94267 16.486 3.62062C18.164 5.29858 19.1067 7.57438 19.1067 9.94737V9.94737Z" stroke="#181818" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+					        	</a>
+					        </div>
+					      </form>
+					    </div>
+					  </div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="main-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-12">
+						<div class="main-text" data-aos="fade-up">
+							<h1>Супермаркет достопримечательностей</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="biography-sec">
+			<div class="container">
+				<div class="row bio-rov">
+					<div class="col-xl-6 col-lg-7 col-md-12 bio-left">
+						<div class="bio-block">
+							<h5 data-aos="fade-up">О путеводителе</h5>
+							<h2 class="title" data-aos="fade-up">Здравствуйте! <br>Меня зовут Антон Миронов</h2>
+							<div class="bio-text" data-aos="fade-up">
+								<p>Я создаю путеводители нового формата, с указанием точных координат. Главным критерием отбора мест для моих книг стала так называемая селфипригодность. Причудливые скалы, бурные водопады, загадочные подземелья, кристально-чистые солёные и пресные озера, исторические объекты и многое другое. В общем всё то, что может стать отличным антуражем для вашего селфи или целой фотосессии.</p>
+								<p>На этом сайте вы можете приобрести как печатные путеводители по регионам России, так и цифровые описания и координаты отдельных объектов</p>
+							</div>
+							<a href="#!" class="black-btn" data-aos="fade-up">Узнать больше</a>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-5 col-md-12 bio-right">
+						<div class="bio-img" data-aos="zoom-in">
+							<img src="images/bio-img.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="print-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="title" data-aos="fade-up">Печатные версии</h2>
+					</div>
+					<div class="col-lg-12">
+						<a href="#!" class="print-block" data-aos="fade-up">
+							<div class="print-text">
+								<h4>Сто чудес Кузбасса на автомобиле</h4>
+								<span>Удивительные места Кузбасса, которые можно посетить в течение одного светового дня</span>
+							</div>
+							<div class="print-buy">
+								<span>Купить у представителя</span>
+							</div>
+						</a>
+						<a href="#!" class="print-block" data-aos="fade-up">
+							<div class="print-text">
+								<h4>Сто чудес Новосибирской области на автомобиле</h4>
+								<span>Из 150-ти водопадов, скал, пещер, озер, а также исторических объектов я выбрал сотню лучших, а те которые оказались не достойны отдельной статьи, были упомянуты в разделах про ближайшие более крутые объекты. </span>
+							</div>
+							<div class="print-buy">
+								<span>Купить у представителя</span>
+							</div>
+						</a>
+						<a href="#!" class="print-block" data-aos="fade-up">
+							<div class="print-text">
+								<h4>Сто чудес вокруг Шира на автомобиле</h4>
+								<span>Хакасия - это целый мир. Что я выбрал для книги? Озера - на любой вкус. От пресных до Сибирского Мертвого моря - озера Тус. От популярных до совершенно неизвестных, но чрезвычайно живописных.</span>
+							</div>
+							<div class="print-buy">
+								<span>Купить у представителя</span>
+							</div>
+						</a>
+
+						<a href="#!" class="print-block" data-aos="fade-up">
+							<div class="print-text">
+								<h4>Горный Алтай. Сто чудес Нижней Катуни на автомобиле</h4>
+								<span>В этой книге есть все лучшее и новое, что вы можете увидеть на Нижней Катуни, даже если вы были там миллион раз или вовсе живете в Узнезе</span>
+							</div>
+							<div class="print-buy">
+								<span>Купить у представителя</span>
+							</div>
+						</a>
+						<a href="#!" class="print-block" data-aos="fade-up">
+							<div class="print-text">
+								<h4>Фрирайд споты и природа Шерегеша</h4>
+								<span>Годами я искал лучшие места для фрирайда. В моей книге 20 лучших маршрутов на любой вкус с точными координатами старта и финиша. Они находятся как рядом с подъемниками, так и в нескольких километрах от Шерегеша.</span>
+							</div>
+							<div class="print-buy">
+								<span>Купить у представителя</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-12 print-col for-tab">
+						<a href="#!" class="black-btn">Купить у представителя</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery-sec" data-aos="zoom-in">
+			<div class="container">
+				<div class="row gallery-rov">
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img">
+						<img src="images/gallery-img1.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img">
+						<img src="images/gallery-img2.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img">
+						<img src="images/gallery-img3.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img">
+						<img src="images/gallery-img4.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img">
+						<img src="images/gallery-img5.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img">
+						<img src="images/gallery-img6.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-block d-md-none d-xs-block">
+						<img src="images/gallery-img7.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-block d-md-none d-xs-block">
+						<img src="images/gallery-img8.png" alt="">
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-block">
+						<img src="images/gallery-img5.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img2.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img3.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img4.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img5.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img6.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img7.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img2.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img3.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-2 col-4 gallery-img d-lg-none d-md-none d-sm-block d-xs-none">
+						<img src="images/gallery-img1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="electronic-sec">
+			<div class="container">
+				<div class="row electronic-rov">
+					<div class="col-lg-12">
+						<h2 class="title">Электронные путеводители</h2>
+					</div>
+
+					<div class="row electronic-block" data-aos="zoom-in">
+						<div class="electronic-img col-lg-6">
+							<h3 data-aos="fade-up" class="mob-title">Кузбасс</h3>
+							<img src="images/electronic-guide1.png" alt="">
+						</div>
+
+						<div class="electronic-text col-lg-6">
+							<h3 data-aos="fade-up" class="pc">Кузбасс</h3>
+							<p data-aos="fade-up">Регион расположен на юго-востоке Западной Сибири. Большая часть области занята Кузнецкой котловиной, огромные угольные запасы которой и определили второе название территории — Кузбасс. Область граничит на западе с Новосибирской областью, на севере — с Томской, на востоке — с Красноярским краем и Республикой Хакасия,</p>
+							<a href="#!" class="up" data-aos="fade-up">Перейти в раздел</a>
+						</div>
+					</div>
+					<div class="row electronic-block revers">
+						<div class="electronic-text col-lg-6">
+							<h3 data-aos="fade-up" class="pc">Алтайский край</h3>
+							<p data-aos="fade-up">Алтайский край расположен на юго-востоке Западной Сибири, на границе континентальной Азии. Территория края составляет 168 тыс. кв. км, На севере край граничит с Новосибирской областью, на востоке — с Кемеровской областью, юго-восточная граница проходит с Республикой Алтай, на юго-западе и западе — государственная граница с Республикой Казахстан</p>
+							<a href="#!" class="up" data-aos="fade-up">Перейти в раздел</a>
+						</div>
+
+						<div class="electronic-img col-lg-6" data-aos="zoom-in">
+							<h3 data-aos="fade-up" class="mob-title">Алтайский край</h3>
+							<img src="images/electronic-guide2.png" alt="">
+						</div>
+					</div>
+
+					<div class="row electronic-block">
+						<div class="electronic-img col-lg-6" data-aos="zoom-in">
+							<h3 data-aos="fade-up" class="mob-title">Республика Алтай</h3>
+							<img src="images/electronic-guide3.png" alt="">
+						</div>
+
+						<div class="electronic-text col-lg-6">
+							<h3 data-aos="fade-up" class="pc">Республика Алтай</h3>
+							<p data-aos="fade-up">Регион расположен на юго-востоке Западной Сибири. Большая часть области занята Кузнецкой котловиной, огромные угольные запасы которой и определили второе название территории - Кузбасс. Область граничит на западе с Новосибирской областью, на севере - с Томской, на востоке - с Красноярским краем и Республикой Хакасия,</p>
+							<a href="#!" class="up" data-aos="fade-up">Перейти в раздел</a>
+						</div>
+					</div>
+					<div class="row electronic-block revers">
+						<div class="electronic-text col-lg-6">
+							<h3 data-aos="fade-up" class="pc">Хакасия</h3>
+							<p data-aos="fade-up">Алтайский край расположен на юго-востоке Западной Сибири, на границе континентальной Азии. Территория края составляет 168 тыс. кв. км, На севере край граничит с Новосибирской областью, на востоке – с Кемеровской областью, юго-восточная граница проходит с Республикой Алтай, на юго-западе и западе – государственная граница с Республикой Казахстан</p>
+							<a href="#!" class="up" data-aos="fade-up">Перейти в раздел</a>
+						</div>
+
+						<div class="electronic-img col-lg-6" data-aos="zoom-in">
+							<h3 data-aos="fade-up" class="mob-title">Хакасия</h3>
+							<img src="images/electronic-guide4.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="popular-questions">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="title" data-aos="fade-up">Популярные вопросы</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="accordion" id="accordionExample">
+						  <div class="accordion-item" data-aos="fade-up">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        <span class="btn-text">Что делать с полученными координатами?</span> <span class="one arrow"></span><span class="two arrow"></span>
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>Забиваете их вместо слов в поисковую строку Яндекс.Карт. Нажимаете «Сохранить», сохраняете, а затем и едете на объект. Если до объекта невозможно доехать на машине, то сохраняете ещё и координаты того места, до которого можно доехать на машине. Они называются «Координаты парковки». Как правило, идти от места парковки до объекта не более 500 метров, но есть и отдалённые объекты, до которых нужно добираться пешком более часа. На фото на сайте они помечены звёздочкой*, в печатных путеводителях указан точный километраж.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item" data-aos="fade-up">
+						    <h2 class="accordion-header" id="headingTwo">
+						      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						        <span class="btn-text">Как купить координаты?</span> <span class="one arrow"></span><span class="two arrow"></span>
+						      </button>
+						    </h2>
+						    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>Забиваете их вместо слов в поисковую строку Яндекс.Карт. Нажимаете «Сохранить», сохраняете, а затем и едете на объект. Если до объекта невозможно доехать на машине, то сохраняете ещё и координаты того места, до которого можно доехать на машине. Они называются «Координаты парковки». Как правило, идти от места парковки до объекта не более 500 метров, но есть и отдалённые объекты, до которых нужно добираться пешком более часа. На фото на сайте они помечены звёздочкой*, в печатных путеводителях указан точный километраж.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item" data-aos="fade-up">
+						    <h2 class="accordion-header" id="headingThree">
+						      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						        <span class="btn-text">Что делать если рядом с достопримечательностью не ловит интернет?</span> <span class="one arrow"></span><span class="two arrow"></span>
+						      </button>
+						    </h2>
+						    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>Забиваете их вместо слов в поисковую строку Яндекс.Карт. Нажимаете «Сохранить», сохраняете, а затем и едете на объект. Если до объекта невозможно доехать на машине, то сохраняете ещё и координаты того места, до которого можно доехать на машине. Они называются «Координаты парковки». Как правило, идти от места парковки до объекта не более 500 метров, но есть и отдалённые объекты, до которых нужно добираться пешком более часа. На фото на сайте они помечены звёздочкой*, в печатных путеводителях указан точный километраж.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item" data-aos="fade-up">
+						    <h2 class="accordion-header" id="headingFour">
+						      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						        <span class="btn-text">Смогу ли я проехать к достопримечательностям на обычном седане?</span> <span class="one arrow"></span><span class="two arrow"></span>
+						      </button>
+						    </h2>
+						    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>Забиваете их вместо слов в поисковую строку Яндекс.Карт. Нажимаете «Сохранить», сохраняете, а затем и едете на объект. Если до объекта невозможно доехать на машине, то сохраняете ещё и координаты того места, до которого можно доехать на машине. Они называются «Координаты парковки». Как правило, идти от места парковки до объекта не более 500 метров, но есть и отдалённые объекты, до которых нужно добираться пешком более часа. На фото на сайте они помечены звёздочкой*, в печатных путеводителях указан точный километраж.</p>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="accordion-item" data-aos="fade-up">
+						    <h2 class="accordion-header" id="headingFive">
+						      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						        <span class="btn-text">Что делать, если телефон разрядится, а я не дошел до места?</span> <span class="one arrow"></span><span class="two arrow"></span>
+						      </button>
+						    </h2>
+						    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>Забиваете их вместо слов в поисковую строку Яндекс.Карт. Нажимаете «Сохранить», сохраняете, а затем и едете на объект. Если до объекта невозможно доехать на машине, то сохраняете ещё и координаты того места, до которого можно доехать на машине. Они называются «Координаты парковки». Как правило, идти от места парковки до объекта не более 500 метров, но есть и отдалённые объекты, до которых нужно добираться пешком более часа. На фото на сайте они помечены звёздочкой*, в печатных путеводителях указан точный километраж.</p>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="accordion-item-end">
+						  	<h4 data-aos="fade-up">Не нашли ответа на свой вопрос? </h4>
+						  	<p data-aos="fade-up">Перейдите по ссылке в раздел FAQ или напишите нам</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="follow-sec">
+			<div class="container">
+				<div class="row follow-rov">
+					<div class="col-xl-4 col-lg-6 col-md-12 follow-col">
+						<div class="follow-title">
+							<h2 class="title" data-aos="fade-up">Подписывайтесь на наш инстаграм</h2>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-6 col-md-12" data-aos="fade-left">
+						<div class="follow-slider">
+							<div class="follow-item">
+								<img src="images/follow-slider1.png" alt="">
+							</div>
+							<div class="follow-item">
+								<img src="images/follow-slider2.png" alt="">
+							</div>
+							<div class="follow-item">
+								<img src="images/follow-slider3.png" alt="">
+							</div>
+							<div class="follow-item">
+								<img src="images/follow-slider1.png" alt="">
+							</div>
+							<div class="follow-item">
+								<img src="images/follow-slider2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 ftr-col one">
+						<div class="ftr-logo">
+							<a href="#!">супермаркет <br>достопримечательностей</a>
+						</div>
+						<div class="ftr-contact for-tab">
+							<div class="ftr-tel">
+								<a href="tel:" class="f-tel">8 913 432 57-51</a>
+								<a href="mailto:mail@gmail.com" class="f-mail">mail@gmail.com</a>
+							</div>
+							<div class="ftr-socials">
+								<a href="#!"><img src="images/vk.png" alt=""></a>
+								<a href="#!"><img src="images/insta.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-4 col-6 ftr-col">
+						<div class="ftr-menu">
+							<a href="#!">О путеводителе</a>
+							<a href="#!">Кузбасс</a>
+							<a href="#!">Республика Алтай</a>
+							<a href="#!">Алтайский край</a>
+							<a href="#!">Хакасия</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-6 ftr-col for-bor">
+						<div class="ftr-faq">
+							<a href="#!">FAQ</a>
+							<a href="#!">Оплата</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 ftr-col pc">
+						<div class="ftr-contact">
+							<div class="ftr-tel">
+								<a href="tel:" class="f-tel">8 913 432 57-51</a>
+								<a href="mailto:mail@gmail.com" class="f-mail">mail@gmail.com</a>
+							</div>
+							<div class="ftr-socials">
+								<a href="#!"><img src="images/vk.png" alt=""></a>
+								<a href="#!"><img src="images/insta.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="ftr-copy">
+							<p>©Путеводители Антона Миронова. <br> Все права защищены</p>
+							<a href="#!">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>	
+	<script src="js/aos.js"></script>
+	<script src="js/script.js"></script>
+
+	<script>
+	  AOS.init({
+	  	once: true,
+	  	duration: 1000,
+	  	offset: 20,
+      // easing: 'ease-in-sine',
+      	delay: 100,
+      	// throttleDelay : 99 ,
+	  });
+	</script>
+</body>
+</html>
